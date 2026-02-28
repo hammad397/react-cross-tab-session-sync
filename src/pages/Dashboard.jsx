@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
-import { logout } from "../store/slices/authSlice";
 import { useNavigate, Link } from "react-router-dom";
 import { setProductId } from "../store/slices/productSlice";
+import { broadcastLogout } from "../utils/broadcastChannel";
 
 const products = [
   {
@@ -36,7 +36,7 @@ const Dashboard = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    dispatch(logout());
+    dispatch(broadcastLogout());
     navigate("/");
   };
 

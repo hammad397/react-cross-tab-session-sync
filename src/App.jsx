@@ -6,7 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import About from "./pages/About";
 import Products from "./pages/Products";
 
-import "./utils/sessionManager";
+import "./utils/broadcastChannel";
 
 function App() {
   return (

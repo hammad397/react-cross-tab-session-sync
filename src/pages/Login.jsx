@@ -1,13 +1,13 @@
 import { useDispatch } from "react-redux";
-import { login } from "../store/slices/authSlice";
 import { useNavigate } from "react-router-dom";
+import { broadcastLogin } from "../utils/broadcastChannel";
 
 const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    dispatch(login());
+    dispatch(broadcastLogin());
     navigate("/dashboard");
   };
 
