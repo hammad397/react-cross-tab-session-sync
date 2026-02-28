@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  padding: 24px;
+
+  .about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+
+  ul {
+    li {
+      list-style: none;
+      padding-bottom: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+.about-container,
+.products-container,
+.login-container {
+  padding: 24px;
+}
+
+.login-container {
+  .title {
+    padding-bottom: 20px;
+  }
+}
